@@ -1,0 +1,101 @@
+/* nav {
+
+  height: 120px;
+  width: 100vw;
+  background-color: #4056A1;
+  color: #fff;
+  padding: 1.5em;
+  position: fixed;
+  top:0;
+}
+
+.blocker{
+  height:120px;
+}
+
+nav span {
+  font-family: 'Bungee', 'sans-serif';
+
+}
+
+nav div {
+  display: flex;
+  font-family: "Source Sans Pro", 'sans-serif';
+  justify-content: flex-end;
+
+}
+
+#arrows {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2em;
+  margin-top: 1em;
+
+}
+
+.headerDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.tweet-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+}
+
+.avatar-name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  border: solid;
+  height: 10em;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 3%;
+  flex-direction: column;
+}
+
+
+
+.writing-container{
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.icons{
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+#retweet:hover{
+  color: orange
+}
+#heart:hover{
+  color: orange
+}
+
+#comment:hover{
+  color: orange
+}
+
+#article-box:hover{
+  box-shadow: 4px 4px 4px;
+}
+
+
+ */

@@ -1,0 +1,64 @@
+/* button {
+  font-family: "Bungee", "sans-serif";
+  background-color: #4056a1;
+  color: #fff;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1em;
+}
+
+
+
+.labelz {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+textarea {
+  display: flex;
+  justify-content: flex-start;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  width: 100%;
+}
+
+.divTweet {
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: solid;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.counter {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.red{
+  color: red;
+}
+
+#error-msg{
+  display: flex;
+  font-family: 'Arial Narrow Bold';
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 400px;
+  border: solid;
+  border-color: red;
+  color: red;
+}
+.new-tweet{
+  display: flex;
+  justify-content: center;
+} */

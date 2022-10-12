@@ -1,0 +1,479 @@
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+@media only screen and (max-width: 768px) {
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  /*
+ * Global layout stuff
+ */
+
+  body {
+    color: #545149;
+    background-color: #f4f1ec;
+    font-family: "Source sans Pro", "sans-serif", "Bungee";
+    font-size: 12px;
+  }
+
+  /* /////////////////////////////////////////////////////////////////////// */
+  /* ////////////////////////////////////////////////////////////////////// */
+  /* HEADER
+  /* /////////////////////////////////////////////////////////////////////// */
+  /* ////////////////////////////////////////////////////////////////////// */
+
+  nav {
+    height: 60px;
+    width: 100vw;
+    background-color: #7940a1;
+    background-image: url("https://www.transparenttextures.com/patterns/blu-stripes.png");
+
+    color: #fff;
+    padding: 1.5em;
+    position: static;
+    top: 0;
+  }
+
+  /* .blocker {
+    height: 60px;
+  } */
+
+  nav span {
+    font-family: "Bungee", "sans-serif";
+    display: flex;
+    font-size: 20px;
+    padding-left: 1em;
+  }
+
+  nav div {
+    display: flex;
+    font-family: "Source Sans Pro", "sans-serif";
+    justify-content: flex-end;
+  }
+
+  #arrows {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 7em;
+  }
+
+  .headerDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .writeTweet {
+    font-size: 18px;
+    padding-top: 0.5em;
+    padding-right: 2em;
+  }
+
+  #avatar {
+    max-width: 20%;
+    height: auto;
+  }
+
+  .avatar-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .divHead {
+    display: flex;
+    flex-direction: column;
+    background-color: #7940a1;
+    background-image: url("https://www.transparenttextures.com/patterns/blu-stripes.png");
+    width: 100vw;
+    top: 60px;
+    position: static;
+    height: 30%;
+  }
+
+  #name {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10%;
+    font-size: 34px;
+    font-family: "Source sans Pro", "sans-serif", "Bungee";
+    color: white;
+  }
+
+  h2 {
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+
+  #hex {
+    display: flex;
+    justify-content: center;
+  }
+  #hex1 {
+    max-width: 10em;
+    height: auto;
+  }
+
+  /* /////////////////////////////////////////////////////////////////////// */
+  /* ////////////////////////////////////////////////////////////////////// */
+  /* NEW-TWEET */
+  /* /////////////////////////////////////////////////////////////////////// */
+  /* ////////////////////////////////////////////////////////////////////// */
+
+  button {
+    font-family: "Bungee", "sans-serif";
+    background-color: #4056a1;
+    color: #fff;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1em;
+  }
+
+  .humming {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  textarea {
+    display: flex;
+    justify-content: flex-start;
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    width: 100%;
+  }
+
+  .divTweet {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: solid;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  .counter {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .red {
+    color: red;
+  }
+
+  #error-msg {
+    display: flex;
+    font-family: "Arial Narrow Bold";
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 400px;
+    border: solid;
+    border-color: red;
+    color: red;
+  }
+
+  /* /////////////////////////////////////////////////////////////////////// */
+  /* ////////////////////////////////////////////////////////////////////// */
+  /*  TWEET STRUCTURE
+  /* /////////////////////////////////////////////////////////////////////// */
+  /* ////////////////////////////////////////////////////////////////////// */
+
+  .tweet-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+  }
+  article {
+    display: flex;
+    justify-content: center;
+    border: solid;
+    height: 10em;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+    flex-direction: column;
+  }
+  .writing-container {
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+  }
+  #retweet:hover {
+    color: orange;
+  }
+  #heart:hover {
+    color: orange;
+  }
+  #comment:hover {
+    color: orange;
+  }
+  #article-box:hover {
+    box-shadow: 4px 4px 4px;
+  }
+}
+/* //////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////// */
+/* ////************ DESKTOP VIEW************/ /*////////////// */
+/* /////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////// */
+
+@media only screen and (min-width: 769px) and (max-width: 1920px) {
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  /*
+   * Global layout stuff
+   */
+
+  body {
+    color: #545149;
+    background-color: #f4f1ec;
+    font-family: "Source sans Pro", "sans-serif", "Bungee";
+    font-size: 16px;
+  }
+
+  /* /////////////////////////////////////////////////////////////////////// */
+  /* ////////////////////////////////////////////////////////////////////// */
+  /* HEADER
+    /* /////////////////////////////////////////////////////////////////////// */
+  /* ////////////////////////////////////////////////////////////////////// */
+
+  nav {
+    height: 120px;
+    width: 100vw;
+    background-color: #4056a1;
+    color: #fff;
+    padding: 1.5em;
+    position: fixed;
+    top: 0;
+  }
+
+  .blocker {
+    height: 120px;
+  }
+
+  nav span {
+    font-family: "Bungee", "sans-serif";
+    display: flex;
+    font-size: 34px;
+  }
+
+  #arrows {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10em;
+  }
+
+  .headerDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 3em;
+    padding-left: 1.8em;
+  }
+
+  .writeTweet {
+    font-size: 34px;
+    padding-bottom: 0.2em;
+  }
+
+  #avatar {
+    max-width: 20%;
+    height: auto;
+  }
+
+  .avatar-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .divHead {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #7940a1;
+    background-image: url("https://www.transparenttextures.com/patterns/blu-stripes.png");
+    width: 30vw;
+    height: 30vw;
+    top: 200px;
+    left: 40px;
+    position: fixed;
+    padding-top: 4em;
+  }
+
+  #name {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-bottom: 10%;
+    font-size: 34px;
+    font-family: "Source sans Pro", "sans-serif", "Bungee";
+  }
+
+  #hex {
+    display: flex;
+    justify-content: center;
+  }
+  #hex1 {
+    max-width: 60%;
+    height: auto;
+  }
+
+  /* /////////////////////////////////////////////////////////////////////// */
+  /* ////////////////////////////////////////////////////////////////////// */
+  /* NEW-TWEET */
+  /* /////////////////////////////////////////////////////////////////////// */
+  /* ////////////////////////////////////////////////////////////////////// */
+
+  .container {
+    width: 70%;
+    float: right;
+  }
+
+  button {
+    font-family: "Bungee", "sans-serif";
+    background-color: #4056a1;
+    color: #fff;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1em;
+  }
+
+  .humming {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  textarea {
+    display: flex;
+    justify-content: flex-start;
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    width: 100%;
+  }
+
+  .divTweet {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: solid;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  .counter {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .red {
+    color: red;
+  }
+
+  #error-msg {
+    display: flex;
+    font-family: "Arial Narrow Bold";
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 400px;
+    border: solid;
+    border-color: red;
+    color: red;
+    margin-left: 10em;
+    margin-bottom: 1em;
+  }
+
+  /* /////////////////////////////////////////////////////////////////////// */
+  /* ////////////////////////////////////////////////////////////////////// */
+  /*  TWEET STRUCTURE
+    /* /////////////////////////////////////////////////////////////////////// */
+  /* ////////////////////////////////////////////////////////////////////// */
+
+  .tweet-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+  }
+  article {
+    display: flex;
+    justify-content: center;
+    border: solid;
+    height: 10em;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+    flex-direction: column;
+  }
+  .writing-container {
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+  }
+  #retweet:hover {
+    color: orange;
+  }
+  #heart:hover {
+    color: orange;
+  }
+  #comment:hover {
+    color: orange;
+  }
+  #article-box:hover {
+    box-shadow: 4px 4px 4px;
+  }
+}
